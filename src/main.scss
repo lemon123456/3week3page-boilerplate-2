@@ -1,4 +1,77 @@
 body {
-  background: green;
+  background: white;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.left-content {
+  background: pink;
+  width: 18%;
+  height: 800px;
+  margin-right: 20px;
+  float: left;
+  display: inline-block;
+}
+
+.right-content {
+  background: deepskyblue;
+  width: 80%;
+  height: 800px;
+  float: left;
+  display: inline-block;
+  .show-picture {
+    background-image: url("../src/images/Food.jpg");
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    background-size: 100% 100%;
+    .description-title {
+      background: white;
+      color: black;
+      float: right;
+      padding: 5px 20px;
+      margin: 350px auto 0 auto;
+      font-style: oblique;
+    }
+    .description-content {
+      background: black;
+      color: white;
+      float: right;
+      padding: 5px 20px;
+      margin: 0 auto;
+      font-style: oblique;
+    }
+    .clearfix {
+      clear: both
+    }
+  }
+  .picture-select {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .select-option {
+      float: left;
+      width: 25%;
+      color: #00A48E;
+      background-color: #EFF8F7;
+      box-sizing: border-box;
+      border-right: 1px solid #CFEBE7;
+      &:last-child {
+        border-right: none;
+      }
+      .select-title {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+      .select-content {
+        margin-left: 20px;
+      }
+    }
+    .select-active {
+      background-color: #D9EFEC;
+    }
+
+  }
 }
 
