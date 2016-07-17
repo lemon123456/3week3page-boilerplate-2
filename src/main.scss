@@ -72,21 +72,58 @@ body {
   content: "\e944";
 }
 
-.icon_size {
-  font-size: 35px;
-}
-
 .clearfix {
   clear: both
 }
 
 .left-content {
-  background: pink;
+
   width: 18%;
   height: 800px;
   margin-right: 20px;
   float: left;
   display: inline-block;
+  .main-picture {
+    width: 70%;
+    margin-left: 13%;
+  }
+  .tab-list {
+    list-style-type: none;
+    margin: 50px auto;
+    .tab-link {
+      margin: 20px auto;
+      .table_icon {
+      }
+      .tab-name {
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 20px;
+        color: #00A48E;
+      }
+    }
+  }
+  .side-form {
+    margin: 50px 30px;
+    .side-title {
+      font-size: 14px;
+      margin: 30px auto 10px auto;
+      border-bottom: 1px dashed #E5E5E5;
+    }
+    .side-content {
+      font-size: 12px;
+      font-style: italic;
+    }
+    .side-button {
+      background-color: white;
+      color: #00A48E;
+      font-style: italic;
+      text-align: center;
+      text-decoration: none;
+      padding: 8px 5px;
+      border-radius: 4px;
+      border: 2px solid #e7e7e7;
+    }
+  }
 }
 
 .right-content {
@@ -146,56 +183,6 @@ body {
       background-color: #D9EFEC;
     }
   }
-  //.newsletter {
-  //  width: 100%;
-  //  margin: 30px auto;
-  //  border-top: 1px dashed #E5E5E5;
-  //  border-bottom: 1px dashed #E5E5E5;
-  //  display: inline-block;
-  //  .sign-newsletter {
-  //    padding: 20px auto;
-  //    width: 60%;
-  //    float: left;
-  //    font-size: 15px;
-  //  }
-  //  .sign-for-newsletter {
-  //    padding: 20px auto;
-  //    width: 40%;
-  //    float: right;
-  //    text-align: center;
-  //    .newsletter {
-  //      width: 45%;
-  //      display: inline-block;
-  //      font-size: 12px;
-  //      padding: 5px 15px;
-  //    }
-  //    .email_box {
-  //      width: 30%;
-  //      display: inline-block;
-  //    }
-  //    .subscribe_button {
-  //      width: 10%;
-  //      display: inline-block;
-  //    }
-  //    .email-input {
-  //      width: 250px;
-  //      padding: 2px 5px;
-  //      box-sizing: border-box;
-  //      border: 1px solid #555;
-  //      outline: none;
-  //      font-size: 14px;
-  //      margin: 4px 2px;
-  //    }
-  //    .subscribe-button {
-  //      border-radius: 4px;
-  //      text-align: center;
-  //      text-decoration: none;
-  //      font-size: 14px;
-  //      margin: 4px 2px;
-  //      cursor: pointer;
-  //    }
-  //  }
-  //}
 
   .sign-newsletter {
     width: 100%;
@@ -254,11 +241,11 @@ body {
         margin: 20px 10px;
       }
       .publish_date {
-        margin: 20px 10px;
+        margin: 20px 0 20px 10px;
         color: #ACACAC;
       }
       .read_more {
-        margin: 20px 10px;
+        margin: 20px 10px 2px 0;
         color: #44B2A0;
       }
     }
